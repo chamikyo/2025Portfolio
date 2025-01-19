@@ -1,0 +1,103 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  top: -100px; /* 기본적으로 숨김 상태 */
+  left: 0;
+  right: 0;
+  transition: top 0.5s ease; /* 슬라이드 애니메이션 */
+  z-index: 1000;
+}
+
+.navbar.visible {
+  top: 0; /* 보일 때는 화면 상단에 위치 */
+}
+
+.navbar.hidden {
+  top: -100px; /* 숨길 때는 화면 위로 숨김 */
+}
+
+.navbar-black {
+  background-color: rgb(0, 0, 0); /* Black */
+}
+
+.navbar-white {
+  background-color: #fff; /* White */
+}
+
+.navbar-logo a,
+.navbar-links a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+}
+
+.navbar-logo a {
+  font-family: 'Gmarket', sans-serif;
+  font-size: 24px;
+}
+
+.navbar-black .navbar-logo a,
+.navbar-black .navbar-links a {
+  color: #fff; /* White text */
+}
+
+.navbar-white .navbar-logo a,
+.navbar-white .navbar-links a {
+  color: #000; /* Black text */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-left: 80px;
+  position: relative; /* 드롭다운 메뉴 배치를 위한 relative */
+}
+
+.navbar-links a {
+  font-size: 20px;
+}
+
+.navbar-links a:hover {
+  color: #5e87ff;
+}
+
+/* 세로형 드롭다운 메뉴 스타일 */
+.dropdown-menu {
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+  position: absolute; /* 부모 요소 기준으로 배치 */
+  top: 100%; /* 부모 요소 아래에 배치 */
+  left: -25px;
+  padding: 10px 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 120px; /* 메뉴 폭 */
+  border-radius: 10px;
+}
+
+/* 기본 스타일 제거 및 여백 조정 */
+.dropdown-menu li {
+  letter-spacing: -0.05em;
+  list-style: none; /* 기본 목록 스타일 제거 */
+  padding: 10px 10px; /* 상하 패딩만 적용 */
+  margin: 0; /* 마진 제거 */
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: lighter;
+}
+
+.dropdown-menu a:hover {
+  color: #5e87ff;
+}

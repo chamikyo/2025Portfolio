@@ -1,0 +1,63 @@
+.description {
+    display: flex;
+    margin-top: 200px;
+    align-items: start;
+    gap: 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .info {
+    flex: 1;
+    min-width: 240px;
+    color: #000;
+    letter-spacing: -0.4px;
+    font: 400 20px/28px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .description-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: -0.64px;
+  }
+  
+  .highlight {
+    color: #007fef;
+  }
+  
+  .description-description {
+    margin-top: 40px;
+  }
+  
+  .photo {
+    flex: 0 0 401px;
+    padding: 0 68px 60px;
+  }
+  
+  
+  .profile-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -34px;
+    border-radius: 50px;
+  }
+  
+  @media (max-width: 991px) {
+    .about {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  
+    .photo {
+      flex-basis: 100%;
+      padding: 0;
+    }
+  
+  
+    .profile-img {
+      margin-bottom: 10px;
+    }
+  }
+  

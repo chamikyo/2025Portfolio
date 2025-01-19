@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Nexa';
+  src: url('/Users/endless/Desktop/my-portfolio/public/fonts/Nexa-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('/Users/endless/Desktop/my-portfolio/public/fonts/Nexa-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gmarket';
+  src: url('/Users/endless/Desktop/my-portfolio/public/fonts/GmarketSansTTFBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gmarket';
+  src: url('/Users/endless/Desktop/my-portfolio/public/fonts/GmarketSansTTFMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gmarket';
+  src: url('/Users/endless/Desktop/my-portfolio/public/fonts/GmarketSansTTFLight.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue','Nexa', 'Gmarket'
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+}

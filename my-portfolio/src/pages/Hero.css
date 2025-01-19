@@ -1,0 +1,109 @@
+.hero-section {
+  width: auto;
+  display: flex;
+  flex-direction: column; /* 섹션을 세로로 나열 */
+  justify-content: space-between; /* 상하 배치 조정 */
+  align-items: center; /* 중앙 정렬 */
+  margin-top: 40px;
+  padding: 0 10px;
+  text-align: left; /* 텍스트 중앙 정렬 */
+  position: relative; /* down-button 위치 고정 */
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between; /* 텍스트와 이미지를 좌우로 나란히 배치 */
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px; /* 전체 너비를 제한 */
+}
+
+.hero-text {
+  flex: 1;
+  margin-right: 40px; /* 텍스트와 이미지 사이 간격 추가 */
+}
+
+.hero-text h1 {
+  font-size: 44px;
+  line-height: 64px;
+  letter-spacing: -0.96px;
+}
+
+.ux-designer {
+  font-weight: 700;
+  color: rgba(0, 127, 239, 1);
+  animation: float-text 4s ease-in-out infinite;
+}
+
+.hero-internship {
+  font: 24px/1 Inter, sans-serif;
+}
+
+.hero-cta-button {
+  font-size: 20px;
+  width: 200px;
+  margin-top: 50px;
+  padding: 16px 32px;
+  border-radius: 40px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font: 20px, Inter, sans-serif;
+}
+
+.hero-cta-button:hover {
+  background-color: rgba(0, 127, 239, 1);
+}
+
+.heroimage {
+  width: 300px;
+  border-radius: 300px;
+  animation: float-image 4s ease-in-out infinite;
+}
+
+.down-button {
+  margin-top: 10vh;
+  background: none;
+  border: none;
+  font-size: 50px;
+  cursor: pointer;
+  animation: float 2s infinite ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .hero-content {
+    flex-direction: column; /* 작은 화면에서는 텍스트와 이미지가 세로로 쌓이도록 설정 */
+  }
+
+  .hero-text {
+    margin-right: 0;
+    margin-bottom: 20px; /* 텍스트와 이미지 사이 간격 추가 */
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(-50%, 0); /* 시작과 끝 위치 */
+  }
+  50% {
+    transform: translate(-50%, -10px); /* 중간 위치 (위로 살짝 올라감) */
+  }
+}
+
+@keyframes float-image {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float-text {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}

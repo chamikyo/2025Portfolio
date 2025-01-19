@@ -1,0 +1,167 @@
+.resume {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .resume-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  
+  .resume-title {
+    color: #000;
+    letter-spacing: -0.96px;
+    font: 700 48px Poppins, sans-serif;
+  }
+  
+  .cta-button {
+    border-radius: 60px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 32px;
+    font: 400 20px Inter, sans-serif;
+    letter-spacing: -0.4px;
+  }
+  
+  .resume-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: Poppins, sans-serif;
+    color: #000;
+  }
+  
+  .resume-section {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 16px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.48px;
+    margin-bottom: 16px;
+  }
+  
+
+  .experience-header,
+  .education-header {
+    width: 15%;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  } 
+
+  .education-item,.experience-item {
+    display: flex; /* Create a flex container for left-right layout */
+    gap: 40px;
+    align-items: center; /* Center align the content vertically */
+    margin-bottom: 32px; /* Spacing between items */
+    flex-direction: row; /* Ensure items are in a row (default) */
+  }
+
+/*   
+  /* Left side for logo */
+  .logo-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px; /* Add margin to space away from text */
+    cursor: pointer; /* Add a pointer cursor for interactivity */
+    flex-shrink: 0; /* Prevent logo from shrinking */
+  } */
+  
+  /* Right side for text */
+  .university-info,
+  .experience-info {
+    flex: 1; /* Take the remaining width */
+    display: flex;
+    flex-direction: column; /* Stack company info vertically */
+    margin-left: 20px; /* Add margin to space away from the logo */
+  }
+  
+  .university-logo,.company-logo {
+    width: 100%;
+    position: absolute;
+    top: 1;
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .default-logo {
+    opacity: 1; /* Show by default */
+    z-index: 1; /* Ensure it's on top initially */
+  }
+  
+  .hover-logo {
+    opacity: 0; /* Hidden by default */
+    z-index: 0; /* Behind the default logo */
+  }
+  
+  .logo-container:hover .default-logo {
+    opacity: 0; /* Hide default logo on hover */
+  }
+  
+  .logo-container:hover .hover-logo {
+    opacity: 1; /* Show hover logo on hover */
+    z-index: 2; /* Bring it to the front */
+  }
+  
+  .company,
+  .university {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+  }
+  
+  .position,
+  .course {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+  
+  .date {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+  
+  .descriptions,
+  .skills-list,
+  .tools-list,
+  .contact-info {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 991px) {
+    .resume {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  
+    .resume-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  
+    .resume-title {
+      font-size: 40px;
+    }
+  
+    .resume-section cta-button {
+      align-self: flex-start;
+    }
+  }
+  

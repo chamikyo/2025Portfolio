@@ -1,0 +1,159 @@
+.footer {
+  background-color: #000;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-content {
+  margin: 100px;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  max-width: 863px;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.footer-heading {
+  color: #fff;
+  letter-spacing: -0.72px;
+  font: 400 36px Poppins, sans-serif;
+  margin-bottom: 24px;
+}
+
+.connect-button {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font: 600 40px Poppins, sans-serif;
+  letter-spacing: -0.8px;
+}
+
+.connect-button:hover {
+  color: #5e87ff;
+}
+
+.arrow {
+  font-family: Inter, sans-serif;
+}
+
+/* 양쪽 정렬을 위한 flex 설정 */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between; /* 양쪽 정렬 */
+  width: 100%;
+  align-items: center;
+}
+
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  font: 400 20px Inter, sans-serif;
+  letter-spacing: -0.4px;
+}
+
+.social-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 4px;
+}
+
+.social-link::after a:hover {
+  color: #5e87ff;
+}
+
+.social-links {
+  display: flex;
+  gap: 32px;
+}
+
+/* 부모 컨테이너를 상대적으로 설정하여 복사 성공 메시지가 절대 위치를 가질 수 있게 설정 */
+.email-wrapper {
+  display: flex;
+  flex-direction: column; /* 이메일과 복사 성공 메시지를 수직으로 정렬 */
+  align-items: flex-end; /* 오른쪽 정렬 */
+  position: relative; /* 복사 성공 메시지가 절대 위치를 가질 수 있도록 설정 */
+}
+
+.email {
+  color: #fff;
+  font: 400 20px Inter, sans-serif;
+  letter-spacing: -0.4px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+.email:hover {
+  color: #5e87ff;
+}
+
+/* 복사 성공 메시지 */
+.copy-message {
+  position: absolute; /* 부모 안에서 절대 위치 지정 */
+  top: -30px; /* 이메일 텍스트 위에 위치 */
+  right: 0; /* 오른쪽 정렬 */
+  color: #5e87ff;
+  font: 400 14px Inter, sans-serif;
+  animation: fadeInOut 2s ease;
+  pointer-events: none; /* 메시지가 클릭을 방해하지 않도록 설정 */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.social-links a:hover {
+  color: #5e87ff;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    max-width: 100%;
+    margin-top: 40px;
+    padding: 40px 20px;
+  }
+
+  .footer-heading {
+    font-size: 28px;
+  }
+
+  .connect-button {
+    font-size: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .email-wrapper {
+    align-items: center; /* 작은 화면에서는 중앙 정렬 */
+  }
+}
