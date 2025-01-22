@@ -79,7 +79,7 @@
     margin-right: 20px; /* Add margin to space away from text */
     cursor: pointer; /* Add a pointer cursor for interactivity */
     flex-shrink: 0; /* Prevent logo from shrinking */
-  } */
+  } 
   
   /* Right side for text */
   .university-info,
