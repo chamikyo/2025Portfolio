@@ -1,17 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Portfolio.css";
 import ProjectSlider from "./ProjectSlider";
 
 const Portfolio = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  // 페이지 로드 시 시작 위치를 조금만 아래로 조정
-  useEffect(() => {
-    window.scrollTo({
-      top: 100, // 원하는 시작 위치
-      behavior: "smooth",
-    });
-  }, []); // 빈 배열로 컴포넌트 마운트 시 한 번만 실행
 
   //그라데이션 배경, 슬라이드 할 때마다 바뀜
   const backgroundGradients = [

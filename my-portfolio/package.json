@@ -29,7 +29,7 @@
     "eject": "react-scripts eject"
 
   },
-
+  "homepage": "https://chamikyo.github.io/2025Portfolio/",
   "eslintConfig": {
     "extends": [
       "react-app",
