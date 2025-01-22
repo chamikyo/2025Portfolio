@@ -1,8 +1,8 @@
-import koddiz from "/Users/endless/Desktop/my-portfolio/src/assets/koddiz.jpg";
-import egg from "/Users/endless/Desktop/my-portfolio/src/assets/egg.jpg";
-import anticancer from "/Users/endless/Desktop/my-portfolio/src/assets/anticancer.png";
-import agricola from "/Users/endless/Desktop/my-portfolio/src/assets/agricola.png";
-import portfolio from "/Users/endless/Desktop/my-portfolio/src/assets/portfolio.png";
+import koddiz from "/Users/endless/2025Portfolio/my-portfolio/src/assets/koddiz.jpg";
+import egg from "/Users/endless/2025Portfolio/my-portfolio/src/assets/egg.jpg";
+import anticancer from "/Users/endless/2025Portfolio/my-portfolio/src/assets/anticancer.png";
+import agricola from "/Users/endless/2025Portfolio/my-portfolio/src/assets/agricola.png";
+import portfolio from "/Users/endless/2025Portfolio/my-portfolio/src/assets/portfolio.png";
 
 
 // src/data/projects.js

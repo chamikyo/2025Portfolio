@@ -1,6 +1,6 @@
 import React from "react";
 import "./Description.css"; // Import the CSS file
-import mikyochaImage from "/Users/endless/Desktop/my-portfolio/src/assets/mikyocha.JPG";
+import mikyochaImage from "/Users/endless/2025Portfolio/my-portfolio/src/assets/mikyocha.JPG";
 
 const Description = () => (
   <section className="description" id="about">

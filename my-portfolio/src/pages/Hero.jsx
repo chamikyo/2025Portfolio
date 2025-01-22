@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import mikyochaImage from "/Users/endless/Desktop/my-portfolio/src/assets/mikyocha2.PNG";
+import mikyochaImage from "/Users/endless/2025Portfolio/my-portfolio/src/assets/mikyocha2.PNG";
 import "./Hero.css";
 
 const HeroSection = () => (

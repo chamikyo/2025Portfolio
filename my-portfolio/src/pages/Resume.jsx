@@ -2,12 +2,12 @@ import React from "react";
 import "./Resume.css"; // Import the CSS file
 
 // Import the logo images
-import NaverCloudLogo from "/Users/endless/Desktop/my-portfolio/src/assets/NaverCloud.png";
-import NaverCloudHoverLogo from "/Users/endless/Desktop/my-portfolio/src/assets/NaverCloudHover.png"; // New hover image
-import NGLLogo from "/Users/endless/Desktop/my-portfolio/src/assets/NGL.png";
-import NGLHoverLogo from "/Users/endless/Desktop/my-portfolio/src/assets/NGLHover.png"; // New hover image
-import HangyangLogo from "/Users/endless/Desktop/my-portfolio/src/assets/HYU.png";
-import HangyangHoverLogo from "/Users/endless/Desktop/my-portfolio/src/assets/HYUHoverLogo.JPG";
+import NaverCloudLogo from "/Users/endless/2025Portfolio/my-portfolio/src/assets/NaverCloud.png";
+import NaverCloudHoverLogo from "/Users/endless/2025Portfolio/my-portfolio/src/assets/NaverCloudHover.png"; // New hover image
+import NGLLogo from "/Users/endless/2025Portfolio/my-portfolio/src/assets/NGL.png";
+import NGLHoverLogo from "/Users/endless/2025Portfolio/my-portfolio/src/assets/NGLHover.png"; // New hover image
+import HangyangLogo from "/Users/endless/2025Portfolio/my-portfolio/src/assets/HYU.png";
+import HangyangHoverLogo from "/Users/endless/2025Portfolio/my-portfolio/src/assets/HYUHoverLogo.JPG";
 
 const experiences = [
   {
