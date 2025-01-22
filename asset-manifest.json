@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/2025Portfolio/static/css/main.c407fe14.css",
+    "main.js": "/2025Portfolio/static/js/main.a1920810.js",
+    "static/media/mikyocha2.PNG": "/2025Portfolio/static/media/mikyocha2.48de2ab29b0588bcecce.PNG",
+    "static/media/portfolio.png": "/2025Portfolio/static/media/portfolio.2c0f5abaf522c08071ad.png",
+    "static/media/NGLHover.png": "/2025Portfolio/static/media/NGLHover.2de4a4495609d64824a4.png",
+    "static/media/NaverCloudHover.png": "/2025Portfolio/static/media/NaverCloudHover.f43a54f72f806b49d941.png",
+    "static/media/GmarketSansTTFBold.ttf": "/2025Portfolio/static/media/GmarketSansTTFBold.69428064ef8eee25be33.ttf",
+    "static/media/GmarketSansTTFMedium.ttf": "/2025Portfolio/static/media/GmarketSansTTFMedium.d4bac6b182bed73c9375.ttf",
+    "static/media/GmarketSansTTFLight.ttf": "/2025Portfolio/static/media/GmarketSansTTFLight.efaa8f19ead1555b1c39.ttf",
+    "static/media/mikyocha.JPG": "/2025Portfolio/static/media/mikyocha.936ef1adbedd8ec108b3.JPG",
+    "static/media/HYUHoverLogo.JPG": "/2025Portfolio/static/media/HYUHoverLogo.1cd5148d730daf3c33cb.JPG",
+    "static/media/Nexa-Bold.ttf": "/2025Portfolio/static/media/Nexa-Bold.e3837350fe39d9d30264.ttf",
+    "static/media/Nexa-Light.ttf": "/2025Portfolio/static/media/Nexa-Light.f5677e04ea4c10ffda20.ttf",
+    "static/media/agricola.png": "/2025Portfolio/static/media/agricola.c2468488576282fdb311.png",
+    "static/media/koddiz.jpg": "/2025Portfolio/static/media/koddiz.37c44da9b1c2ec28d80c.jpg",
+    "static/media/egg.jpg": "/2025Portfolio/static/media/egg.f77d940cdfaef2d91aab.jpg",
+    "static/media/anticancer.png": "/2025Portfolio/static/media/anticancer.b1a2d67be8f7660ba1f8.png",
+    "static/media/HYU.png": "/2025Portfolio/static/media/HYU.b256631b11dcc2c855a7.png",
+    "static/media/NGL.png": "/2025Portfolio/static/media/NGL.175caa58cafd8eccff72.png",
+    "static/media/NaverCloud.png": "/2025Portfolio/static/media/NaverCloud.07b9edf557e4ed71e33b.png",
+    "index.html": "/2025Portfolio/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.c407fe14.css",
+    "static/js/main.a1920810.js"
+  ]
+}
