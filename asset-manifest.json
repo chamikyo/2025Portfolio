@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/2025Portfolio/static/css/main.c407fe14.css",
-    "main.js": "/2025Portfolio/static/js/main.244df0b2.js",
+    "main.js": "/2025Portfolio/static/js/main.a8720e69.js",
     "static/media/mikyocha2.PNG": "/2025Portfolio/static/media/mikyocha2.48de2ab29b0588bcecce.PNG",
     "static/media/portfolio.png": "/2025Portfolio/static/media/portfolio.2c0f5abaf522c08071ad.png",
     "static/media/NGLHover.png": "/2025Portfolio/static/media/NGLHover.2de4a4495609d64824a4.png",
@@ -24,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.c407fe14.css",
-    "static/js/main.244df0b2.js"
+    "static/js/main.a8720e69.js"
   ]
 }
