@@ -4,7 +4,6 @@
   align-items: center;
   padding: 20px 40px;
   position: fixed;
-  width: 100%;
   top: -100px; /* 기본적으로 숨김 상태 */
   left: 0;
   right: 0;

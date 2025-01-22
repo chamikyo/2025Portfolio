@@ -12,7 +12,8 @@
     min-width: 240px;
     color: #000;
     letter-spacing: -0.4px;
-    font: 400 20px/28px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+    font: 400 20px/28px "Poppins", Roboto, Helvetica, sans-serif;
+
   }
   
   .description-title {
