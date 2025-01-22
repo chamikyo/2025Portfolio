@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/common/Navbar';
 import Portfolio from './pages/Portfolio';
 import LandingPage from './components/LandingPage';
@@ -16,8 +16,8 @@ import PortfolioProject from './projects/PortfolioProject';
 import './styles/index.css';
 
 const App = () => {
-  return (
-    <Router>
+  return ( 
+    <BrowserRouter basename={process.env.PUBLIC_URL}> 
       <div>
         <Navbar />
         <Routes>
@@ -37,7 +37,8 @@ const App = () => {
         </Routes>
         <Footer/>
       </div>
-    </Router>
+
+    </BrowserRouter>
   );
 };
 
