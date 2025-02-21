@@ -1,38 +1,4 @@
-@font-face {
-  font-family: 'Nexa';
-  src: url('/Users/endless/Desktop/my-portfolio/public/fonts/Nexa-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'Nexa';
-  src: url('/Users/endless/Desktop/my-portfolio/public/fonts/Nexa-Light.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Gmarket';
-  src: url('/Users/endless/Desktop/my-portfolio/public/fonts/GmarketSansTTFBold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gmarket';
-  src: url('/Users/endless/Desktop/my-portfolio/public/fonts/GmarketSansTTFMedium.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gmarket';
-  src: url('/Users/endless/Desktop/my-portfolio/public/fonts/GmarketSansTTFLight.ttf') format('truetype');
-  font-weight: lighter;
-  font-style: normal;
-}
 
 
 body {

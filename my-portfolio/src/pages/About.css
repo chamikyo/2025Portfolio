@@ -1,6 +1,14 @@
-.about {
+html, body {
+  overflow-x: hidden; /* 가로 스크롤 방지 */
   background-color: white;
-  padding: 20px 200px;
+  width: 100%;
+
+}
+
+.about {
+  overflow-x: hidden;
+  width: 100%;
+  background-color: white;
   font-family: Arial, sans-serif;
 }
 

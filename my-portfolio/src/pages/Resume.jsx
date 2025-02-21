@@ -11,9 +11,9 @@ import HangyangHoverLogo from "/Users/endless/2025Portfolio/my-portfolio/src/ass
 
 const experiences = [
   {
-    company: "NGL Transportation",
+    company: "NGL Transportation ",
     role: "IT Intern",
-    date: "Jan 2023 - Jan 2024",
+    date: "Arizona, USA | Jan 2023 - Jan 2024",
     logo: NGLLogo,
     hoverLogo: NGLHoverLogo, // New hover logo
     description: [
@@ -28,7 +28,7 @@ const experiences = [
   {
     company: "Naver Cloud Platform",
     role: "Cloud Platform Planning Intern",
-    date: "Jul 2022 - Oct 2022",
+    date: "Seoul, Korea | Jul 2022 - Oct 2022",
     logo: NaverCloudLogo,
     hoverLogo: NaverCloudHoverLogo, // New hover logo
     description: [
@@ -43,7 +43,7 @@ const education = [
   {
     university: "Hanyang Univerciry ERICA",
     course: "Bachelor of science engineering",
-    date: "Mar 2020 - Aug 2024",
+    date: "Ansan, Korea | Mar 2020 - Aug 2024",
     logo: HangyangLogo,
     hoverLogo: HangyangHoverLogo, // New hover logo
     description: [

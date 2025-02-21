@@ -1,62 +1,57 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { FiMenu, FiX } from "react-icons/fi"; // 햄버거 아이콘 추가
 import "./Navbar.css";
 
 const Navbar = () => {
   const location = useLocation();
-  const isAboutPage = location.pathname === "/about";
+  const isWhiteNav =
+    location.pathname === "/about" || location.pathname === "/portfolio"; // ✅ 포트폴리오 페이지도 흰색 적용
 
-  // 드롭다운 상태 및 타이머 관리
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-  const dropdownTimer = useRef(null); // 타이머를 저장할 ref
+  const dropdownTimer = useRef(null);
 
-  // 스크롤 상태 관리
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [isMouseAtTop, setIsMouseAtTop] = useState(false);
-  const lastScrollY = useRef(0); // 마지막 스크롤 위치 저장
+  const lastScrollY = useRef(0);
 
-  // 마우스가 포트폴리오에 올라갔을 때 드롭다운 표시
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen((prev) => !prev);
+  };
+
   const handleMouseEnter = () => {
     if (dropdownTimer.current) {
-      clearTimeout(dropdownTimer.current); // 타이머 취소
+      clearTimeout(dropdownTimer.current);
     }
-    setIsDropdownVisible(true); // 드롭다운 표시
+    setIsDropdownVisible(true);
   };
 
-  // 마우스가 포트폴리오에서 벗어났을 때 2초 후 드롭다운 숨기기
   const handleMouseLeave = () => {
     dropdownTimer.current = setTimeout(() => {
-      setIsDropdownVisible(false); // 드롭다운 숨김
-    }, 200); // 0.2초 대기
+      setIsDropdownVisible(false);
+    }, 300);
   };
 
-  // 스크롤 이벤트 핸들러를 useCallback으로 메모이제이션
   const handleScroll = useCallback(() => {
     const currentScrollY = window.scrollY;
-
-    // 스크롤이 아래로 내려가면 숨기고, 위로 올라가면 보이게 설정
     if (currentScrollY > lastScrollY.current && !isMouseAtTop) {
       setIsNavbarVisible(false);
     } else {
       setIsNavbarVisible(true);
     }
-
-    // 마지막 스크롤 위치 업데이트
     lastScrollY.current = currentScrollY;
   }, [isMouseAtTop]);
 
-  // 마우스가 화면 위쪽에 있을 때 네비게이션 바를 보이게 설정
   const handleMouseMove = useCallback((event) => {
-    // 커서가 화면 위쪽 100px 안에 있으면 네비게이션 바 보이기
     if (event.clientY < 100) {
       setIsMouseAtTop(true);
-      setIsNavbarVisible(true); // 네비게이션 바 보이기
+      setIsNavbarVisible(true);
     } else {
       setIsMouseAtTop(false);
     }
   }, []);
 
-  // 스크롤 및 마우스 이동 이벤트 리스너 추가
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("mousemove", handleMouseMove);
@@ -65,59 +60,97 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, [handleScroll, handleMouseMove]); // 종속성 배열에 함수들 추가
+  }, [handleScroll, handleMouseMove]);
 
   return (
     <>
       <nav
-        className={`navbar ${isAboutPage ? "navbar-white" : "navbar-black"} ${
+        className={`navbar ${isWhiteNav ? "navbar-white" : "navbar-black"} ${
           isNavbarVisible ? "visible" : "hidden"
-        }`} // 네비게이션 바 보이기/숨기기
+        }`}
       >
-        <div className="navbar-logo">
-          <Link to="/">MIKYO CHA</Link>
-        </div>
-        <ul className="navbar-links">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li
-            className="portfolio-link"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+        <div className="navbar-container">
+          {/* 로고 */}
+          <div className="navbar-logo">
+            <Link to="/">MIKYO CHA</Link>
+          </div>
+
+          {/* 햄버거 버튼 (네비 색상에 따라 아이콘 색 변경) */}
+          <div
+            className="hamburger-menu"
+            onClick={toggleMobileMenu}
+            style={{ color: isWhiteNav ? "#000" : "#fff" }}
           >
-            <Link to="/portfolio">Portfolio</Link>
-            {/* 세로형 드롭다운 메뉴 */}
-            {isDropdownVisible && (
-              <ul
-                className={`dropdown-menu ${
-                  isAboutPage ? "navbar-white" : "navbar-black"
-                }`}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              >
-                <li>
-                  <Link to="/portfolio/koddiz">Koddiz</Link>
-                </li>
-                <li>
-                  <Link to="/portfolio/egg">Egg</Link>
-                </li>
-                <li>
-                  <Link to="/portfolio/anticancer">Anticancer</Link>
-                </li>
-                <li>
-                  <Link to="/portfolio/agricola">Agricola</Link>
-                </li>
-                <li>
-                  <Link to="/portfolio/portfolio-project">My Portfolio</Link>
-                </li>
-              </ul>
-            )}
-          </li>
-        </ul>
+            {isMobileMenuOpen ? <FiX size={30} /> : <FiMenu size={30} />}
+          </div>
+
+          {/* 네비게이션 메뉴 */}
+          <ul
+            className={`navbar-links ${isMobileMenuOpen ? "active" : ""} ${
+              isWhiteNav ? "navbar-white" : "navbar-black"
+            }`}
+          >
+            <li>
+              <Link to="/" onClick={toggleMobileMenu}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={toggleMobileMenu}>
+                About
+              </Link>
+            </li>
+            <li
+              className="portfolio-link"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <Link to="/portfolio" onClick={toggleMobileMenu}>
+                Portfolio
+              </Link>
+
+              {/* 드롭다운 메뉴 */}
+              {isDropdownVisible && (
+                <ul
+                  className={`dropdown-menu ${
+                    isWhiteNav ? "navbar-white" : "navbar-black"
+                  }`}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <li>
+                    <Link to="/portfolio/koddiz" onClick={toggleMobileMenu}>
+                      Koddiz
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/portfolio/egg" onClick={toggleMobileMenu}>
+                      Egg
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/portfolio/anticancer" onClick={toggleMobileMenu}>
+                      Anticancer
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/portfolio/agricola" onClick={toggleMobileMenu}>
+                      Agricola
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/portfolio/portfolio-project"
+                      onClick={toggleMobileMenu}
+                    >
+                      My Portfolio
+                    </Link>
+                  </li>
+                </ul>
+              )}
+            </li>
+          </ul>
+        </div>
       </nav>
     </>
   );

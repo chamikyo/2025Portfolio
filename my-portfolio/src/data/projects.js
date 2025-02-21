@@ -27,7 +27,7 @@ const projects = [
       {
         id: 3,
         title: "Anticancer",
-        name : "anicancer",
+        name : "anticancer",
         descriptionEn: "Harness the power of big data to predict cancer recovery rates and optimize treatment duration, empowering better healthcare decisions.",
         descriptionKo : "빅데이터를 활용해 암 완치율과 치료 기간을 예측하는 의료 대시보드!",
         prize: "국립암센터 대상",
@@ -37,7 +37,7 @@ const projects = [
       id: 4,
       title: "Agricola",
       name : "agricola",
-      descriptionEn: "Experience the classic strategy of Agricola—now online! Build, farm, and compete anytime, anywhere.",
+      descriptionEn: "Experience the classic strategy of Agricola—now online!  Build, farm, and compete anytime, anywhere.",
       descriptionKo: "온라인으로 즐기는 아그리콜라 게임!",
       prize: "Software Engineeing lecture 소프트웨어공학 강의",
       imageUrl: agricola,

@@ -5,9 +5,10 @@
   justify-content: space-between; /* 상하 배치 조정 */
   align-items: center; /* 중앙 정렬 */
   margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
   padding: 0 10px;
   text-align: left; /* 텍스트 중앙 정렬 */
-  position: relative; /* down-button 위치 고정 */
 }
 
 .hero-content {
@@ -68,16 +69,42 @@
   font-size: 50px;
   cursor: pointer;
   animation: float 2s infinite ease-in-out;
+  color: #000;
 }
 
 @media (max-width: 991px) {
+
   .hero-content {
     flex-direction: column; /* 작은 화면에서는 텍스트와 이미지가 세로로 쌓이도록 설정 */
+    align-items:center;
   }
 
-  .hero-text {
-    margin-right: 0;
-    margin-bottom: 20px; /* 텍스트와 이미지 사이 간격 추가 */
+  .hero-text h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.96px;
+  }
+
+  .hero-internship {
+    font: 16px/1 "Inter", sans-serif;
+  }
+
+  .heroimage {
+    width: 30vh;
+    margin-top: 5vh;
+    border-radius: 300px;
+    animation: float-image 4s ease-in-out infinite;
+  }
+  .hero-cta-button {
+    font-size: 14px;
+    width: 150px;
+    margin-top: 10px;
+    padding: 8px 16px;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font: 20px, Inter, sans-serif;
   }
 }
 

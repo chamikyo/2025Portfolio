@@ -8,7 +8,10 @@ import React, {
 import { useGLTF, Text } from "@react-three/drei";
 
 export const Folders = forwardRef((props, ref) => {
-  const { nodes, materials } = useGLTF("/models/folders/scene.gltf");
+  // const { nodes, materials } = useGLTF("/models/folders/scene.gltf");
+  const { nodes, materials } = useGLTF(
+    `${process.env.PUBLIC_URL}/models/folders/scene.gltf`
+  );
   const [hovered, setHovered] = useState(false);
   const folderRef = useRef();
   const [loaded, setLoaded] = useState(false); // 로드 완료 상태 관리
@@ -69,13 +72,13 @@ export const Folders = forwardRef((props, ref) => {
         </mesh>
       )}
       <Text
+        font={`${process.env.PUBLIC_URL}/fonts/Poppins-Regular.ttf`}
         position={[0.02, 1.5, 1.5]} // 인덱스 텍스트 위치 조정
         rotation={[-Math.PI / 2, Math.PI / 2, Math.PI / 2]} // 텍스트 회전 조정
         fontSize={0.18} // 텍스트 크기 조정
         color={props.textColor || "black"} // 텍스트 색상
         anchorX="center" // 텍스트 정렬
         anchorY="middle"
-        font="/fonts/Poppins-Regular.ttf"
         letterSpacing={-0.1} // 자간 조정
       >
         {props.indexText}

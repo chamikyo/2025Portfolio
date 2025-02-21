@@ -7,7 +7,10 @@ import { useNavigate } from "react-router-dom";
 import * as THREE from "three";
 
 export function Cabinet({ setDragging, ...props }) {
-  const { nodes, materials } = useGLTF("/models/cabinet/scene.gltf");
+  // const { nodes, materials } = useGLTF("/models/cabinet/scene.gltf");
+  const { nodes, materials } = useGLTF(
+    `${process.env.PUBLIC_URL}/models/cabinet/scene.gltf`
+  );
   const [drawerPosition, setDrawerPosition] = useState(0);
   const drawerRef = useRef();
   const folderRefs = useRef([]);

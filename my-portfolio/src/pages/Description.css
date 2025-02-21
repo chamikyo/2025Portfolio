@@ -1,6 +1,8 @@
 .description {
     display: flex;
     margin-top: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
     align-items: start;
     gap: 100px;
     justify-content: space-between;
@@ -44,12 +46,26 @@
   }
   
   @media (max-width: 991px) {
-    .about {
-      max-width: 100%;
-      margin-top: 40px;
-      padding: 0 20px;
+    .description {
+      display: flex;
+      margin-top: 100px;
+      margin-left: 50px;
+      margin-right: 50px;
+      align-items: start;
+      gap: 100px;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
-  
+    
+    .description-title {
+      font-size: 32px;
+
+    }
+
+    .description-description {
+      font-size: 18px;
+    }
+    
     .photo {
       flex-basis: 100%;
       padding: 0;

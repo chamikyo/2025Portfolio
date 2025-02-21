@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/common/Navbar";
-import Portfolio from "./pages/Portfolio";
+import ProjectList from "./pages/ProjectList";
 import Home from "./components/Home";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
@@ -25,7 +25,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
 
           {/* 다른 페이지들 */}
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio" element={<ProjectList />} />
           <Route path="/portfolio/koddiz" element={<Koddiz />} />
           <Route path="/portfolio/egg" element={<Egg />} />
           <Route path="/portfolio/anticancer" element={<Anticancer />} />
