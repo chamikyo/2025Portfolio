@@ -1,0 +1,101 @@
+.anticancer-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+}
+
+.slides-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-out;
+    margin-bottom: 200px;
+}
+
+.slide {
+    margin-top: 100px;
+    width: 80vw;
+    max-width: 1440px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    border-radius: 15px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 40px;
+}
+
+.projectSeparator {
+    width: 10%;
+    margin: 200px auto; /* 위아래 여백 50px, 가운데 정렬 */
+    height: 1px;
+    background-color: #878787; /* Light gray */
+    border: none;
+}
+
+.next-project {
+    font-family: Inter, sans-serif;
+    letter-spacing: -1.5px;
+    color: #111827;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+/* ✅ 현재 활성화된 슬라이드 */
+.active-slide {
+    transform: scale(1.1);
+
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 1;
+}
+
+/* ✅ 이전/다음 슬라이드 */
+.inactive-slide {
+    transform: scale(0.9);
+    opacity: 0.7;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/* ✅ 모바일 (한 화면에 4개 보이는 경우) */
+@media (max-width: 768px) {
+
+    .slides-wrapper {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .slide {
+        width: 85vw; /* Reduce width slightly for better fit */
+        max-width: 550px; /* Adjust max-width */
+        margin-top: 50px; /* Reduce top margin for better spacing */
+    }
+    
+    .active-slide {
+        transform: scale(1.05); /* Reduce scaling effect on mobile */
+    }
+
+    .next-project {
+        
+        font-size: 32px;
+    }
+    
+    .inactive-slide {
+        transform: scale(0.85); /* Reduce inactive slide size slightly */
+        opacity: 0.6; /* Adjust opacity for better differentiation */
+    }
+}

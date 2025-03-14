@@ -8,12 +8,38 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: black;
+    padding: 100px;
 
   }
 
   .Home-section {
-    width: 90%;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    border: 2px solid #232323;
+    border-radius: 15px;
+
+}
+
+/* 반응형 조정 */
+@media (max-width: 768px) {
+
+  .Home-section {
+    width: 95%; /* 화면이 작아질수록 너비를 더 넓게 */
+    min-height: 80vh; /* 태블릿에서는 높이를 살짝 줄이기 */
+  }
+}
+
+@media (max-width: 480px) {
+
+  .Home-page {
+    padding-left: 20px;
+    padding-right: 20px;
 
   }
+  .Home-section {
+    width: 100%;
+    min-height: 70vh; /* 모바일에서는 높이를 더 줄이기 */
+    margin: 0px auto;
+  }
+}

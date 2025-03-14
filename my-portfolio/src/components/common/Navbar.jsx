@@ -5,8 +5,15 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const location = useLocation();
-  const isWhiteNav =
-    location.pathname === "/about" || location.pathname === "/portfolio"; // ✅ 포트폴리오 페이지도 흰색 적용
+  const whiteNavPages = [
+    "/about",
+    "/portfolio",
+    "/portfolio/korddiz",
+    "/portfolio/anticancer",
+    "/portfolio/unius",
+  ];
+
+  const isWhiteNav = whiteNavPages.includes(location.pathname);
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -30,7 +37,7 @@ const Navbar = () => {
   const handleMouseLeave = () => {
     dropdownTimer.current = setTimeout(() => {
       setIsDropdownVisible(false);
-    }, 300);
+    }, 400);
   };
 
   const handleScroll = useCallback(() => {
@@ -119,13 +126,13 @@ const Navbar = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <li>
-                    <Link to="/portfolio/koddiz" onClick={toggleMobileMenu}>
-                      Koddiz
+                    <Link to="/portfolio/unius" onClick={toggleMobileMenu}>
+                      Unius
                     </Link>
                   </li>
                   <li>
-                    <Link to="/portfolio/egg" onClick={toggleMobileMenu}>
-                      Egg
+                    <Link to="/portfolio/korddiz" onClick={toggleMobileMenu}>
+                      Korddiz
                     </Link>
                   </li>
                   <li>
@@ -133,7 +140,7 @@ const Navbar = () => {
                       Anticancer
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/portfolio/agricola" onClick={toggleMobileMenu}>
                       Agricola
                     </Link>
@@ -145,7 +152,7 @@ const Navbar = () => {
                     >
                       My Portfolio
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               )}
             </li>

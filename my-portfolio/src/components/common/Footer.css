@@ -8,10 +8,11 @@
 .footer-content {
   margin: 100px;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   display: flex;
   width: 100%;
-  max-width: 863px;
+  max-width: 1440px;
 }
 
 .footer-top {
@@ -21,10 +22,14 @@
 }
 
 .footer-heading {
+  display: contents;
   color: #fff;
   letter-spacing: -0.72px;
   font: 400 36px Poppins, sans-serif;
+  font-weight:500;
+  margin: 0;
   margin-bottom: 24px;
+  
 }
 
 .connect-button {
@@ -41,16 +46,21 @@
   color: #5e87ff;
 }
 
+.logo-img {
+  height: 30px; /* 원하는 크기로 조정 */
+  width: auto;
+}
+
+
 .arrow {
   font-family: Inter, sans-serif;
 }
 
-/* 양쪽 정렬을 위한 flex 설정 */
+
 .footer-bottom {
   display: flex;
-  justify-content: space-between; /* 양쪽 정렬 */
-  width: 100%;
-  align-items: center;
+  flex-direction: row;
+  gap: 200px;
 }
 
 .social-link {
@@ -60,22 +70,34 @@
   letter-spacing: -0.4px;
 }
 
-.social-link::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #fff;
-  margin-top: 4px;
-}
 
 .social-link::after a:hover {
   color: #5e87ff;
 }
 
+.social-link-header {
+  color: #fff;
+  font:  20px Inter, sans-serif;
+  font-weight:bold;
+  letter-spacing: -0.4px;
+
+}
+
+
+.social-link-header::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+
 .social-links {
   display: flex;
-  gap: 32px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* 부모 컨테이너를 상대적으로 설정하여 복사 성공 메시지가 절대 위치를 가질 수 있게 설정 */
@@ -102,7 +124,7 @@
 /* 복사 성공 메시지 */
 .copy-message {
   position: absolute; /* 부모 안에서 절대 위치 지정 */
-  top: -30px; /* 이메일 텍스트 위에 위치 */
+  top: 10px; /* 이메일 텍스트 위에 위치 */
   right: 0; /* 오른쪽 정렬 */
   color: #5e87ff;
   font: 400 14px Inter, sans-serif;
@@ -130,14 +152,19 @@
 }
 
 @media (max-width: 991px) {
+
+  .footer-heading {
+    display: none;
+  }
   .footer {
     max-width: 100%;
     margin-top: 0;
-    padding: 0;
   }
 
   .footer-content {
-    margin: 50px;
+    margin: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     align-items: flex-start;
     flex-direction: column;
     display: flex;
@@ -145,29 +172,51 @@
     max-width: 863px;
   }
   
-  .footer-heading {
-    font-size: 24px;
-  }
 
   .connect-button {
     font-size: 20px;
   }
 
   .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start; /* 오른쪽 정렬 */
-    
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8vh;
   }
 
   .social-links {
-    font-size: 18px;
+    font-size: 12px;
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
     margin-bottom: 10px;
 
+  }
+
+  .social-link {
+    color: #fff;
+    text-decoration: none;
+    font: 400 14px Inter, sans-serif;
+    letter-spacing: -0.4px;
+  }
+  
+  .social-link-header {
+    color: #fff;
+    font:  16px Inter, sans-serif;
+    font-weight:bold;
+    letter-spacing: -0.4px;
+  
+  }
+  .email {
+    color: #fff;
+    font: 400 15px Inter, sans-serif;
+    letter-spacing: -0.4px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 0px;
   }
 
   .email-wrapper {
     align-items: center; /* 작은 화면에서는 중앙 정렬 */
   }
+
+
 }

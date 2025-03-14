@@ -13,11 +13,20 @@ const HeroSection = () => (
         <p className="hero-internship">
           Service Platform Planning intern at <strong>Naver Cloud</strong>
         </p>
-        <button className="hero-cta-button" aria-label="View My Resume">
+        <button
+          className="hero-cta-button"
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1I8hH1eZ2Ov7HhrcrHzEqPWq3wJCZLWOb/view?usp=sharing",
+              "_blank"
+            )
+          }
+          aria-label="View My Resume"
+        >
           My Resume ↗
         </button>
       </div>
-      <div>
+      <div classname="imagebox">
         <img
           src={mikyochaImage}
           alt="Portrait of Mikyo Kaia Cha"
@@ -25,11 +34,9 @@ const HeroSection = () => (
         />
       </div>
     </div>
-    <div className="down-button-container">
-      <button className="down-button" aria-label="Scroll Down">
-        ↓
-      </button>
-    </div>
+    <button className="down-button" aria-label="Scroll Down">
+      ↓
+    </button>
   </section>
 );
 

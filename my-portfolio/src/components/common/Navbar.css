@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 40px;
+  padding: 10px 40px;
   position: fixed;
   top: -100px;
   left: 0;
@@ -22,7 +22,7 @@
 
 .navbar-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,9 +90,9 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 5vh;
-  left: -25px;
-  padding: 0 10px;
+  top: 2vh;
+  left: -20px;
+  padding:  10px;
   padding-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.);
   z-index: 1;
@@ -110,6 +110,10 @@
   font-size: 18px;
 }
 
+@media (max-width< 1090px) {
+}
+
+
 /* ✅ 햄버거 메뉴 기본적으로 숨기기 */
 .hamburger-menu {
   display: none; /* 🚀 기본적으로 숨김 */
@@ -125,10 +129,11 @@
 
   .navbar-links {
     position: absolute;
-    top: 58px;
+    padding-top: 30px;
+    top: 38px;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -140,6 +145,9 @@
   }
   
 
+  .navbar.hidden {
+    top: 0;
+  }
   
   .navbar-links.active {
     transform: translateY(0);
@@ -169,7 +177,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 5vh;
+  top: 4vh;
   left: -40px;
   padding: 0 0px;
   z-index: 1;
@@ -180,7 +188,7 @@
 }
 
 .dropdown-menu li {
-  margin: 10px 10px;
+  margin: 15px 10px;
 }
 
 

@@ -93,8 +93,8 @@ const Resume = () => (
                 {/* Render the company logo and hover logo */}
                 <h4 className="company">{experience.company}</h4>
                 <p className="position">{experience.role}</p>
+                <p className="date">{experience.date}</p>
               </div>
-              <p className="date">{experience.date}</p>
             </div>
             <ul className="descriptions">
               {experience.description.map((item, descIndex) => (
@@ -127,8 +127,8 @@ const Resume = () => (
                 {/* Render the university logo and hover logo */}
                 <h4 className="university">{education.university}</h4>
                 <p className="course">{education.course}</p>
+                <p className="date">{education.date}</p>
               </div>
-              <p className="date">{education.date}</p>
             </div>
             <ul className="descriptions">
               {education.description.map((item, descIndex) => (

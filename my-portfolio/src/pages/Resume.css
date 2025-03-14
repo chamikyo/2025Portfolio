@@ -4,7 +4,32 @@
   margin-left: 50px;
   margin-right: 50px;
   flex-direction: column;
+  align-items: center;
+  
 }
+
+.resume-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px; /* 전체 너비를 제한 */
+
+  gap: 40px;
+  font-family: Poppins, sans-serif;
+  color: #000;
+  max-width: 1440px;
+}
+
+
+.resume-section {
+  width: 100%;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  padding-top: 16px;
+  
+}
+
 
 .resume-header {
   display: flex;
@@ -30,18 +55,8 @@
   letter-spacing: -0.4px;
 }
 
-.resume-content {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  font-family: Poppins, sans-serif;
-  color: #000;
-}
 
-.resume-section {
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  padding-top: 16px;
-}
+
 
 .section-title {
   font-size: 24px;
@@ -84,7 +99,9 @@
 .experience-info {
   flex: 1;
   display: flex;
+
   flex-direction: column;
+
 }
 
 /* ✅ 로고 스타일 */
@@ -119,16 +136,22 @@
   font-weight: 600;
   letter-spacing: -0.4px;
   padding-right:  30px;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
-.position{
+.position, .course{
   font-size: 16px;
   letter-spacing: -0.32px;
   text-decoration: underline;
+  margin: 0;
   
-}.course, .date {
+} .date {
   font-size: 16px;
   letter-spacing: -0.32px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  
 
 }
 
@@ -187,7 +210,6 @@
 
   /* ✅ descriptions를 로고와 헤더 아래 배치 */
   .descriptions {
-      width: 100%;
       margin-top: 10px;
   }
 }

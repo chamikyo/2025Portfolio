@@ -4,7 +4,7 @@
   flex-direction: column; /* 섹션을 세로로 나열 */
   justify-content: space-between; /* 상하 배치 조정 */
   align-items: center; /* 중앙 정렬 */
-  margin-top: 100px;
+  margin-top: 200px;
   margin-left: 50px;
   margin-right: 50px;
   padding: 0 10px;
@@ -16,18 +16,21 @@
   justify-content: space-between; /* 텍스트와 이미지를 좌우로 나란히 배치 */
   align-items: flex-start;
   width: 100%;
-  max-width: 1200px; /* 전체 너비를 제한 */
+  max-width: 1440px; /* 전체 너비를 제한 */
 }
 
 .hero-text {
   flex: 1;
   margin-right: 40px; /* 텍스트와 이미지 사이 간격 추가 */
+  font: Poppins, sans-serif;
+  
 }
 
 .hero-text h1 {
-  font-size: 44px;
-  line-height: 64px;
+  color: #000;
   letter-spacing: -0.96px;
+  font: 500 39px Poppins, sans-serif;
+  line-height: 64px;
 }
 
 .ux-designer {
@@ -37,7 +40,8 @@
 }
 
 .hero-internship {
-  font: 24px/1 "Inter", sans-serif;
+  font: 400 24px/1 Poppins, sans-serif;
+  color: #535353;
 }
 
 .hero-cta-button {
@@ -47,7 +51,7 @@
   padding: 16px 32px;
   border-radius: 40px;
   background-color: black;
-  color: white;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   font: 20px, Inter, sans-serif;
 }
@@ -56,6 +60,8 @@
   background-color: rgba(0, 127, 239, 1);
 }
 
+
+
 .heroimage {
   width: 300px;
   border-radius: 300px;
@@ -63,6 +69,7 @@
 }
 
 .down-button {
+
   margin-top: 10vh;
   background: none;
   border: none;
@@ -72,16 +79,27 @@
   color: #000;
 }
 
-@media (max-width: 991px) {
+@media (max-width:991px) {
+
+  .hero-section {
+    width: auto;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 
   .hero-content {
     flex-direction: column; /* 작은 화면에서는 텍스트와 이미지가 세로로 쌓이도록 설정 */
     align-items:center;
   }
 
+  .hero-text {
+margin-right: 0px;
+  }
+
   .hero-text h1 {
     font-size: 32px;
-    line-height: 40px;
+    line-height: 50px;
     letter-spacing: -0.96px;
   }
 
@@ -90,10 +108,11 @@
   }
 
   .heroimage {
-    width: 30vh;
-    margin-top: 5vh;
+    width: 20vh;
+    margin-top: 10vh;
     border-radius: 300px;
     animation: float-image 4s ease-in-out infinite;
+    margin-bottom: 5vh;
   }
   .hero-cta-button {
     font-size: 14px;
@@ -105,6 +124,10 @@
     color: white;
     cursor: pointer;
     font: 20px, Inter, sans-serif;
+  }
+
+  .down-button {
+    display: none;
   }
 }
 

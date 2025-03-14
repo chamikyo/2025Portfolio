@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ScrollToTop from "./pages/ScrollToTop"; // Import ScrollToTop component
+
 import Navbar from "./components/common/Navbar";
 import ProjectList from "./pages/ProjectList";
 import Home from "./components/Home";
@@ -7,17 +9,18 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/common/Footer";
 
-import Koddiz from "./projects/Koddiz";
-import Egg from "./projects/Egg";
+import Korddiz from "./projects/Korddiz";
+import Unius from "./projects/Unius";
 import Anticancer from "./projects/Anticancer";
-import Agricola from "./projects/Agricola";
-import PortfolioProject from "./projects/PortfolioProject";
+// import Agricola from "./projects/Agricola";
+// import PortfolioProject from "./projects/PortfolioProject";
 
 import "./styles/index.css";
 
 const App = () => {
   return (
     <Router basename="/2025Portfolio">
+                <ScrollToTop /> 
       <div>
         <Navbar />
         <Routes>
@@ -26,11 +29,11 @@ const App = () => {
 
           {/* 다른 페이지들 */}
           <Route path="/portfolio" element={<ProjectList />} />
-          <Route path="/portfolio/koddiz" element={<Koddiz />} />
-          <Route path="/portfolio/egg" element={<Egg />} />
+          <Route path="/portfolio/unius" element={<Unius />} />
+          <Route path="/portfolio/korddiz" element={<Korddiz />} />
           <Route path="/portfolio/anticancer" element={<Anticancer />} />
-          <Route path="/portfolio/agricola" element={<Agricola />} />
-          <Route path="/portfolio/portfolio-project" element={<PortfolioProject />} />
+          {/* <Route path="/portfolio/agricola" element={<Agricola />} />
+          <Route path="/portfolio/portfolio-project" element={<PortfolioProject />} /> */}
           <Route path="/about" element={<About />} />
 
           {/* 404 페이지 */}

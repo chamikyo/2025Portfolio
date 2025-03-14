@@ -7,7 +7,7 @@
     text-decoration: none;
     font: 400 24px Poppins, sans-serif;
     letter-spacing: -0.48px;
-    margin: 76px auto 0;
+    margin: 10vh auto 5vh;
     padding: 50px 0;
   }
   
@@ -19,7 +19,14 @@
   
   @media (max-width: 991px) {
     .go-top-btn {
-      margin-top: 40px;
+      font: 400 20px Poppins, sans-serif;
+      margin-top: 5vh;
+      margin-bottom: 1vh;
+    }
+
+    .arrow-icon1 {
+      width: 20px;
+      object-fit: contain;
     }
   }
   
