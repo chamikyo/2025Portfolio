@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/2025Portfolio/static/css/main.ed0fc9ad.css",
-    "main.js": "/2025Portfolio/static/js/main.d07fb55f.js",
+    "main.css": "/2025Portfolio/static/css/main.26785876.css",
+    "main.js": "/2025Portfolio/static/js/main.b7d1b8f3.js",
     "static/media/mikyocha2.PNG": "/2025Portfolio/static/media/mikyocha2.48de2ab29b0588bcecce.PNG",
     "static/media/NGLHover.png": "/2025Portfolio/static/media/NGLHover.2de4a4495609d64824a4.png",
     "static/media/NaverCloudHover.png": "/2025Portfolio/static/media/NaverCloudHover.f43a54f72f806b49d941.png",
@@ -35,7 +35,7 @@
     "index.html": "/2025Portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.ed0fc9ad.css",
-    "static/js/main.d07fb55f.js"
+    "static/css/main.26785876.css",
+    "static/js/main.b7d1b8f3.js"
   ]
 }
