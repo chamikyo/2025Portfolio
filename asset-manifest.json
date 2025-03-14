@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/2025Portfolio/static/css/main.e289bd94.css",
+    "main.css": "/2025Portfolio/static/css/main.e7711d81.css",
     "main.js": "/2025Portfolio/static/js/main.b7d1b8f3.js",
     "static/media/mikyocha2.PNG": "/2025Portfolio/static/media/mikyocha2.48de2ab29b0588bcecce.PNG",
     "static/media/NGLHover.png": "/2025Portfolio/static/media/NGLHover.2de4a4495609d64824a4.png",
@@ -35,7 +35,7 @@
     "index.html": "/2025Portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.e289bd94.css",
+    "static/css/main.e7711d81.css",
     "static/js/main.b7d1b8f3.js"
   ]
 }
