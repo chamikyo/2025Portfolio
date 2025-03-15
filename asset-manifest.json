@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.e7711d81.css",
-    "main.js": "/static/js/main.b32e91e8.js",
-    "static/media/mikyocha2.PNG": "/static/media/mikyocha2.48de2ab29b0588bcecce.PNG",
+    "main.js": "/static/js/main.f92241ad.js",
     "static/media/NGLHover.png": "/static/media/NGLHover.2de4a4495609d64824a4.png",
     "static/media/NaverCloudHover.png": "/static/media/NaverCloudHover.f43a54f72f806b49d941.png",
     "static/media/mikyocha.JPG": "/static/media/mikyocha.936ef1adbedd8ec108b3.JPG",
     "static/media/HYUHoverLogo.JPG": "/static/media/HYUHoverLogo.1cd5148d730daf3c33cb.JPG",
+    "static/media/profile.png": "/static/media/profile.8347626ca56544d534bb.png",
     "static/media/slide6.png": "/static/media/slide6.257f4fa3c872d28f0fd1.png",
     "static/media/slide4.png": "/static/media/slide4.feb607d1cfa1ca85352c.png",
     "static/media/slide16.png": "/static/media/slide16.4217beb61726b59f55b6.png",
@@ -36,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.e7711d81.css",
-    "static/js/main.b32e91e8.js"
+    "static/js/main.f92241ad.js"
   ]
 }
