@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.491be0a0.css",
-    "main.js": "/static/js/main.fd9d5e7c.js",
+    "main.css": "/static/css/main.3dae2ae6.css",
+    "main.js": "/static/js/main.6709398d.js",
     "static/media/NGLHover.png": "/static/media/NGLHover.2de4a4495609d64824a4.png",
     "static/media/NaverCloudHover.png": "/static/media/NaverCloudHover.f43a54f72f806b49d941.png",
     "static/media/mikyocha.JPG": "/static/media/mikyocha.936ef1adbedd8ec108b3.JPG",
@@ -39,7 +39,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.491be0a0.css",
-    "static/js/main.fd9d5e7c.js"
+    "static/css/main.3dae2ae6.css",
+    "static/js/main.6709398d.js"
   ]
 }
