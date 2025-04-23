@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.3dae2ae6.css",
-    "main.js": "/static/js/main.a9f683ce.js",
+    "main.css": "/static/css/main.ce3112a3.css",
+    "main.js": "/static/js/main.1b5eb3d0.js",
     "static/media/NGLHover.png": "/static/media/NGLHover.2de4a4495609d64824a4.png",
     "static/media/NaverCloudHover.png": "/static/media/NaverCloudHover.f43a54f72f806b49d941.png",
     "static/media/mikyocha.JPG": "/static/media/mikyocha.936ef1adbedd8ec108b3.JPG",
     "static/media/HYUHoverLogo.JPG": "/static/media/HYUHoverLogo.1cd5148d730daf3c33cb.JPG",
     "static/media/profile.png": "/static/media/profile.8347626ca56544d534bb.png",
+    "static/media/ASUHoverLogo.jpg": "/static/media/ASUHoverLogo.d8842882f6eb0e3a66dc.jpg",
     "static/media/slide6.png": "/static/media/slide6.e738a9200139a34bd1ec.png",
     "static/media/slide5.png": "/static/media/slide5.3ddb6fea56ec0e391d2c.png",
     "static/media/slide16.png": "/static/media/slide16.9406c0dd190e7376ee0e.png",
@@ -32,6 +33,7 @@
     "static/media/slide21.png": "/static/media/slide21.320f9a6fb6493b9fd8f4.png",
     "static/media/HYU.png": "/static/media/HYU.b256631b11dcc2c855a7.png",
     "static/media/slide3.png": "/static/media/slide3.25e339a49b48e9897e79.png",
+    "static/media/ASULogo.png": "/static/media/ASULogo.35c23be63e4aabf9051f.png",
     "static/media/logowhite.png": "/static/media/logowhite.e2eb3f1dcd4b17ce0bce.png",
     "static/media/slide20.png": "/static/media/slide20.c9a7a034473b62c06e24.png",
     "static/media/NGL.png": "/static/media/NGL.175caa58cafd8eccff72.png",
@@ -39,7 +41,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.3dae2ae6.css",
-    "static/js/main.a9f683ce.js"
+    "static/css/main.ce3112a3.css",
+    "static/js/main.1b5eb3d0.js"
   ]
 }
