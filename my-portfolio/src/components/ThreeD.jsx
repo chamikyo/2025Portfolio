@@ -5,6 +5,7 @@ import * as THREE from "three";
 import { Cabinet } from "./3D/Cabinet";
 import MainText from "./3D/MainText";
 import SubText from "./3D/SubText";
+import SubText2 from "./3D/SubText2";
 // import Background from "./3D/Background";
 // import Room from "./3D/Room";
 
@@ -49,21 +50,30 @@ const ThreeD = () => {
   }, []);
 
   const frontc = "#ffe853";
-  const backc = "#0040ff";
+  const backc = "#ff0080";
 
-  const subTexts = Array.from({ length: 8 }, (_, i) => ({
+  const subTexts = Array.from({ length: 1 }, (_, i) => ({
     position: [
       i % 2 === 0 ? 1 : 0.98, // X 좌표: 짝수는 1, 홀수는 0.98
       0 - Math.floor(i / 2) * 0.15, // Y 좌표: 인덱스 2마다 0.15씩 줄어듦
-      i % 2 === 0 ? 1.8 : 1.78, // Z 좌표: 짝수는 2, 홀수는 1.98
+      i % 2 === 0 ? 2 : 1.78, // Z 좌표: 짝수는 2, 홀수는 1.98
+    ],
+    color: i % 2 === 0 ? backc : frontc, // 짝수는 frontc, 홀수는 backc
+  }));
+
+  const subTexts2 = Array.from({ length: 1 }, (_, i) => ({
+    position: [
+      i % 2 === 0 ? 1 : 0.98, // X 좌표: 짝수는 1, 홀수는 0.98
+      -0.2 - Math.floor(i / 2) * 0.15, // Y 좌표: 인덱스 2마다 0.15씩 줄어듦
+      i % 2 === 0 ? 2.3 : 1.78, // Z 좌표: 짝수는 2, 홀수는 1.98
     ],
     color: i % 2 === 0 ? frontc : backc, // 짝수는 frontc, 홀수는 backc
   }));
 
   return (
-    <div style={{ height: "100vh" }}>
+    <div style={{ height: "80vh" }}>
       {mounted && ( // 마운트 완료 후에만 Canvas 렌더링
-        <Canvas camera={{ position: [4.8, -0.2, 0], fov: 75 }}>
+        <Canvas camera={{ position: [5, 0.2, 0], fov: 75 }}>
           <ambientLight intensity={0.2} />
           <directionalLight position={[5, -2, 1]} />
           <directionalLight position={[0, 5, 1]} />
@@ -79,6 +89,9 @@ const ThreeD = () => {
             <Stars />
             {subTexts.map((props, index) => (
               <SubText key={index} {...props} />
+            ))}
+            {subTexts2.map((props, index) => (
+              <SubText2 key={index} {...props} />
             ))}
           </Suspense>
 

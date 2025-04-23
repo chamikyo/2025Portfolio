@@ -6,9 +6,9 @@ import React, {
   useEffect,
 } from "react";
 import { useGLTF, Text } from "@react-three/drei";
+import { a, useSpring } from "@react-spring/three";
 
 export const Folders = forwardRef((props, ref) => {
-  // const { nodes, materials } = useGLTF("/models/folders/scene.gltf");
   const { nodes, materials } = useGLTF(
     `${process.env.PUBLIC_URL}/models/folders/scene.gltf`
   );
@@ -38,17 +38,20 @@ export const Folders = forwardRef((props, ref) => {
     props.onClick();
   };
 
+  const { positionSpring } = useSpring({
+    positionSpring: hovered
+      ? [props.position[0], props.position[1] + 0.05, props.position[2]]
+      : props.position,
+    config: { mass: 1, tension: 170, friction: 26 },
+  });
+
   return (
-    <group
+    <a.group
       {...props}
       ref={folderRef}
       dispose={null}
       scale={[0.09, 0.05, 0.09]}
-      position={
-        hovered
-          ? [props.position[0], props.position[1] + 0.05, props.position[2]]
-          : props.position
-      }
+      position={positionSpring}
       onPointerOver={(e) => {
         e.stopPropagation();
         setHovered(true);
@@ -74,7 +77,7 @@ export const Folders = forwardRef((props, ref) => {
       <Text
         font={`${process.env.PUBLIC_URL}/fonts/Poppins-Regular.ttf`}
         position={[0.02, 1.5, 1.5]} // 인덱스 텍스트 위치 조정
-        rotation={[-Math.PI / 2, Math.PI / 2, Math.PI / 2]} // 텍스트 회전 조정
+        rotation={[-Math.PI / 2, Math.PI / 2.1, Math.PI / 2]} // 텍스트 회전 조정
         fontSize={0.18} // 텍스트 크기 조정
         color={props.textColor || "black"} // 텍스트 색상
         anchorX="center" // 텍스트 정렬
@@ -83,7 +86,7 @@ export const Folders = forwardRef((props, ref) => {
       >
         {props.indexText}
       </Text>
-    </group>
+    </a.group>
   );
 });
 

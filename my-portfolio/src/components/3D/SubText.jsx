@@ -25,12 +25,12 @@ const SubText = (props) => {
       position={props.position} // 텍스트 위치 조정
       font={`${process.env.PUBLIC_URL}/fonts/GmarketSansTTFBold.ttf`}
       rotation={[0, Math.PI / 2, 0]} // Y축 기준으로 90도 회전
-      fontSize={0.12} // 텍스트 크기 조정
+      fontSize={0.15} // 텍스트 크기 조정
       color={props.color} // 텍스트 색상
       anchorX="center" // 텍스트 정렬
       anchorY="middle"
     >
-      {"Click, Drag, Zoom In & out it"}
+      {"Find a [MIKYO CHA] folder!"}
     </Text>
   );
 };

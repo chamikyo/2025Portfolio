@@ -12,7 +12,7 @@
   justify-content: space-between;
   display: flex;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1280px;
 }
 
 .footer-top {
@@ -184,7 +184,6 @@
   }
 
   .social-links {
-    font-size: 12px;
     flex-direction: column;
     gap: 15px;
     margin-bottom: 10px;
@@ -207,7 +206,7 @@
   }
   .email {
     color: #fff;
-    font: 400 15px Inter, sans-serif;
+    font: 400 12.8px Inter, sans-serif;
     letter-spacing: -0.4px;
     text-decoration: none;
     cursor: pointer;

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./project.css";
 import projects from "../data/projects";
 import ProjectCard from "../pages/ProjectCard.jsx"; // Import ProjectCard component
+import ScrollProgressBar from "../pages/ScrollProgressBar.jsx";
 
 const uniusProject = projects.find((p) => p.name === "unius"); // Korddiz만 가져오기
 
@@ -62,7 +63,8 @@ const Anticancer = () => {
   }, [isMobile]);
 
   return (
-    <div ref={containerRef} className="anticancer-container">
+    <div ref={containerRef} className="all-container">
+      <ScrollProgressBar />
       <motion.div className="slides-wrapper">
         {slides.map((src, index) => {
           const isActive = index === activeIndex;
@@ -77,7 +79,7 @@ const Anticancer = () => {
               }`}
               style={{ backgroundImage: `url(${src})` }}
               animate={{
-                scale: isActive ? 1.15 : isPrevNext ? 0.9 : 0.85,
+                scale: isActive ? 1.0 : isPrevNext ? 0.9 : 0.85,
                 opacity: isActive ? 1 : isPrevNext ? 0.7 : 0.5,
               }}
               transition={{ duration: 0.5 }}

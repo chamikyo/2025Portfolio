@@ -5,7 +5,6 @@
   margin-right: 50px;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .resume-content {
@@ -13,23 +12,19 @@
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-  max-width: 1440px; /* 전체 너비를 제한 */
-
+  max-width: 1280px; /* 전체 너비를 제한 */
   gap: 40px;
   font-family: Poppins, sans-serif;
   color: #000;
-  max-width: 1440px;
+  max-width: 1280px;
 }
-
 
 .resume-section {
   width: 100%;
   align-items: center;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   padding-top: 16px;
-  
 }
-
 
 .resume-header {
   display: flex;
@@ -55,9 +50,6 @@
   letter-spacing: -0.4px;
 }
 
-
-
-
 .section-title {
   font-size: 24px;
   font-weight: 600;
@@ -67,17 +59,18 @@
 
 .experience-header,
 .education-header {
-  width: 15%;
+  width: 25%;
   justify-content: space-between;
   margin-bottom: 12px;
 }
 
-.education-item, .experience-item {
+.education-item,
+.experience-item {
   display: flex;
   flex-direction: row; /* 기본적으로 가로 배치 */
   gap: 40px;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 4vw;
 }
 
 /* ✅ 로고 컨테이너 */
@@ -99,13 +92,12 @@
 .experience-info {
   flex: 1;
   display: flex;
-
   flex-direction: column;
-
 }
 
 /* ✅ 로고 스타일 */
-.university-logo, .company-logo {
+.university-logo,
+.company-logo {
   width: 100%;
   position: absolute;
   transition: opacity 0.3s ease;
@@ -131,31 +123,97 @@
 }
 
 /* ✅ 텍스트 스타일 */
-.company, .university {
+.company,
+.university {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: -0.4px;
-  padding-right:  30px;
+  padding-right: 30px;
   margin-top: 0;
   margin-bottom: 5px;
 }
 
-.position, .course{
+.position,
+.course {
   font-size: 16px;
   letter-spacing: -0.32px;
   text-decoration: underline;
   margin: 0;
-  
-} .date {
+}
+
+.date {
   font-size: 16px;
   letter-spacing: -0.32px;
   margin-top: 30px;
   margin-bottom: 0;
-  
-
 }
 
-.descriptions, .skills-list, .tools-list, .contact-info {
+.descriptions,
+.skills-list,
+.tools-list,
+.contact-info {
+  font-size: 16px;
+  letter-spacing: -0.32px;
+  line-height: 1.5;
+}
+
+/* ✅ Awards Section */
+.awards-header {
+  width: 15%;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.award-item {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  margin-bottom: 32px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.award-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.award-meta {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.award-title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  padding-right: 30px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.award-subtitle {
+  font-size: 16px;
+  letter-spacing: -0.32px;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.award-date {
+  font-size: 16px;
+  letter-spacing: -0.32px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.award-description {
   font-size: 16px;
   letter-spacing: -0.32px;
   line-height: 1.5;
@@ -164,87 +222,138 @@
 /* ✅ 반응형: 작은 화면에서 정렬 변경 */
 @media (max-width: 991px) {
   .resume {
-      max-width: 100%;
-      margin-top: 40px;
-      margin-left: 20px;
-      margin-right: 20px;
-      padding: 0 20px;
+    max-width: 100%;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0 20px;
   }
 
   .resume-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
   }
 
   .resume-title {
-      font-size: 40px;
+    font-size: 40px;
   }
 
   .resume-section .cta-button {
-      align-self: flex-start;
+    align-self: flex-start;
   }
 
   /* ✅ 경험 & 교육 정보 반응형 정렬 */
-  .experience-item, .education-item {
-      flex-direction: column; /* 세로 정렬 */
-      align-items: flex-start; /* 왼쪽 정렬 */
-      gap: 16px; /* 간격 조정 */
+  .experience-item,
+  .education-item {
+    flex-direction: column; /* 세로 정렬 */
+    align-items: flex-start; /* 왼쪽 정렬 */
+    gap: 16px; /* 간격 조정 */
   }
 
   /* ✅ 로고와 헤더를 나란히 배치 */
   .logo-container {
-      width: 150px;
-      height: 150px;
-      margin-bottom: 10px; /* 아래 여백 추가 */
+    width: 160px;
+    height: 150px;
+    margin-bottom: 10px; /* 아래 여백 추가 */
   }
 
-  .experience-header, .education-header {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      text-align: left;
+  .experience-header,
+  .education-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
   }
 
   /* ✅ descriptions를 로고와 헤더 아래 배치 */
   .descriptions {
-      margin-top: 10px;
+    margin-top: 10px;
+  }
+
+  /* ✅ Awards 반응형 정렬 */
+  .award-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .awards-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .award-description {
+    margin-top: 10px;
   }
 }
 
 /* ✅ 더 작은 모바일 화면 */
 @media (max-width: 600px) {
   .resume-title {
-      font-size: 36px;
+    font-size: 36px;
   }
 
   .cta-button {
-      font-size: 18px;
-      width: 180px;
-      padding: 14px 28px;
+    font-size: 18px;
+    width: 180px;
+    padding: 14px 28px;
   }
 
   .logo-container {
-      width: 120px;
-      height: 120px;
+    width: 120px;
+    height: 120px;
   }
 
-  .experience-header, .education-header {
-      font-size: 18px;
+  .experience-header,
+  .education-header {
+    font-size: 18px;
+  }
+  
+  .company,
+  .university {
+    font-size: 18px;
   }
 
-  .company, .university {
-      font-size: 18px;
+  .position,
+  .course {
+    font-size: 14px;
   }
 
-  .position, .course {
-      font-size: 14px;
+  .descriptions,
+  .skills-list,
+  .tools-list,
+  .contact-info {
+    font-size: 14px;
   }
 
+  .award-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    width: 100%;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+  }
 
-  .descriptions {
-      font-size: 14px;
+  .award-info {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .award-title{
+    font-size: 18px;
+  }
+
+  .award-subtitle,
+  .award-date,
+  .award-description {
+    font-size: 14px;
   }
 }

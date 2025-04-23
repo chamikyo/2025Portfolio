@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import mikyochaImage from "/Users/endless/2025Portfolio/my-portfolio/src/assets/mikyocha2.PNG";
+import mikyochaImage from "/Users/endless/2025Portfolio/my-portfolio/src/assets/profile.png";
 import "./Hero.css";
 
 const HeroSection = () => (
@@ -17,7 +17,7 @@ const HeroSection = () => (
           className="hero-cta-button"
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/1I8hH1eZ2Ov7HhrcrHzEqPWq3wJCZLWOb/view?usp=sharing",
+              "https://drive.google.com/file/d/1Q_kAqeZd5VrQTPTrZ70AfzxQW8sx-Q56/view?usp=sharing",
               "_blank"
             )
           }

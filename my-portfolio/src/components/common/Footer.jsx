@@ -31,7 +31,9 @@ const Footer = () => {
           <Link to="/">
             <img src={logo} alt="Mikyo Cha Logo" className="logo-img" />
           </Link>
-          <h2 className="footer-heading">MIKYO KAIA CHA</h2>
+          <Link to="/" className="footer-heading">
+            MIKYO KAIA CHA
+          </Link>
           {/* <button className="connect-button" onClick={handleEmailClick}>
             Let's Connect
             <span className="arrow">↗</span>
@@ -40,7 +42,12 @@ const Footer = () => {
         <div className="footer-bottom">
           {" "}
           <div className="social-links">
-            <text className="social-link-header"> PORTFOLIO </text>
+            <Link className="social-link-header" to="/about">
+              ABOUT
+            </Link>
+            <Link className="social-link-header" to="/portfolio">
+              PORTFOLIO
+            </Link>
             <Link className="social-link" to="/portfolio/unius">
               Unius ↗
             </Link>
@@ -58,7 +65,7 @@ const Footer = () => {
               Mail ↗
             </text>
             <a
-              href="https://drive.google.com/file/d/1I8hH1eZ2Ov7HhrcrHzEqPWq3wJCZLWOb/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Q_kAqeZd5VrQTPTrZ70AfzxQW8sx-Q56/view?usp=sharing"
               className="social-link"
             >
               CV ↗

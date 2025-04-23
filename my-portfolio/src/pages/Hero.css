@@ -16,7 +16,7 @@
   justify-content: space-between; /* 텍스트와 이미지를 좌우로 나란히 배치 */
   align-items: flex-start;
   width: 100%;
-  max-width: 1440px; /* 전체 너비를 제한 */
+  max-width: 1280px; /* 전체 너비를 제한 */
 }
 
 .hero-text {

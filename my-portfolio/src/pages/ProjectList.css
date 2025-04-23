@@ -1,5 +1,5 @@
 .project-paper{
-    margin-top: 160px;
+    margin-top: 150px;
     margin-bottom: 200px;
     display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@
 
 .project-card-wrapper {
     padding: 0 40px;
-    max-width: 1440px;
+    max-width: 1280px;
     display: flex;
     flex-direction: column;
     justify-content:start; /* Centers the projects in the row */

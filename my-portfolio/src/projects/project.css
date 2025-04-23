@@ -1,11 +1,11 @@
-.anticancer-container {
+.all-container {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     position: relative;
-    margin-top: 50px;
+    margin-top: 11vh;
 }
 
 .slides-wrapper {
@@ -17,9 +17,9 @@
 }
 
 .slide {
-    margin-top: 100px;
+    margin-top: 20px;
     width: 80vw;
-    max-width: 1440px;
+    max-width: 1280px;
     height: auto;
     aspect-ratio: 16 / 9;
     background-size: contain;
@@ -58,7 +58,7 @@
 
 /* ✅ 현재 활성화된 슬라이드 */
 .active-slide {
-    transform: scale(1.1);
+    transform: scale(1.0);
 
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
     opacity: 1;
@@ -75,14 +75,14 @@
 @media (max-width: 768px) {
 
     .slides-wrapper {
-        margin-top: 50px;
+        margin-top: 1vh;
         margin-bottom: 100px;
     }
 
     .slide {
         width: 85vw; /* Reduce width slightly for better fit */
         max-width: 550px; /* Adjust max-width */
-        margin-top: 50px; /* Reduce top margin for better spacing */
+        margin-bottom: 1vh; /* Reduce top margin for better spacing */
     }
     
     .active-slide {

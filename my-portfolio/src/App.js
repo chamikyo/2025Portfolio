@@ -19,7 +19,7 @@ import "./styles/index.css";
 
 const App = () => {
   return (
-    <Router basename="/2025Portfolio">
+    <Router>
                 <ScrollToTop /> 
       <div>
         <Navbar />

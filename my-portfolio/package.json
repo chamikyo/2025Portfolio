@@ -34,7 +34,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://chamikyo.github.io/2025Portfolio/",
+  "homepage": "https://www.kaiacha.com",
   "eslintConfig": {
     "extends": [
       "react-app",
